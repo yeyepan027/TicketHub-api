@@ -49,7 +49,7 @@ router.get('/events', async (req, res) => {
         ORDER BY s.Date ASC
       `);
     
-//Explicit mapping with formatted Date and Time
+// Mapping with formatted Date and Time
     const events = result.recordset.map(e => ({
       Id: e.Id,
       Title: e.Title,
